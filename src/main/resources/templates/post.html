@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+</head>
+<body>
+<h1>Post</h1>
+<form th:action="@{/post}" method="post">
+    <label for="title">title: </label>
+    <input id="title" type="text" name="title"/>
+    <br/>
+    <label for="content">content: </label>
+    <textarea id="content" type="text" name="content"/>
+    <br/>
+    <label for="index">title: </label>
+    <input id="index" type="text" name="index"/>
+    <br/>
+    <input type="reset"/>
+    <input type="submit"/>
+</form>
+</body>
+</html>

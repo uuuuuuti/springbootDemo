@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      uri: mongodb://localhost/test
+      database: test
+      repositories:
+        enabled: true
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port:
+      8003

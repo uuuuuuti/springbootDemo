@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>title:</th>
+        <th>content:</th>
+        <th>index:</th>
+        <th>createTime:</th>
+    </tr>
+    <tr th:each="post:${posts}">
+        <td th:text="${post.title}"></td>
+        <td th:text="${post.content}"></td>
+        <td th:text="${post.index}"></td>
+        <td th:text="${post.createDate}"></td>
+    </tr>
+    </thead>
+</table>
+</body>
+</html>

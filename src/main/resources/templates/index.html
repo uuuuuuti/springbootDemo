@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+</head>
+<body>
+<h1>Welcome to Simple Requirement Tracker</h1>
+<div sec:authorize="hasRole('ADMIN')">
+    you are already logined!!
+    <p sec:authorize="name"></p>
+</div>
+
+<a href="/register">Click here to register.</a>
+<a href="/login">Click here to login.</a>
+<a href="/postList">show my post!</a>
+</body>
+</html>
