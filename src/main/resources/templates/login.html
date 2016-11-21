@@ -1,21 +1,82 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <title>Login</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    <title>My Blog</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css"/>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+
 </head>
-<body>
-<h1>Login</h1>
-<form th:action="@{/authenticate}" method="post">
-    <label for="username">User Name: </label>
-    <input id="username" type="text" name="username"/>
-    <br/>
-    <label for="password">Password: </label>
-    <input id="password" type="password" name="password"/>
-    <br/>
-    <input type="reset"/>
-    <input type="submit"/>
-</form>
+
+<body class="texture">
+
+<div id="cl-wrapper" class="login-container">
+
+    <div class="middle-login">
+        <div class="block-flat">
+            <div class="header">
+                <h3 class="text-center"><img class="logo-img" src="images/logo.png" alt="logo"/>NGA ZONE</h3>
+            </div>
+            <div>
+                <form th:action="@{/authenticate}" method="post" style="margin-bottom: 0px !important;" class="form-horizontal">
+                    <div class="content">
+                        <h4 class="title">Login Access</h4>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" placeholder="Username" id="username" name="username" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"/></span>
+                                    <input type="password" placeholder="Password" id="password" name="password" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="foot">
+                        <button class="btn btn-default" data-dismiss="modal" type="button"><a href="register.html">Register</a></button>
+                        <button class="btn btn-primary" data-dismiss="modal" type="submit">Log me in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="text-center out-links"><a href="pages-login.html#">&copy; 2016 produced by zr</a></div>
+    </div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/behaviour/general.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/behaviour/voice-commands.js"></script>
+<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
+<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/jquery.flot/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/jquery.flot/jquery.flot.labels.js"></script>
 </body>
 </html>
